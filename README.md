@@ -1,34 +1,36 @@
 # 📦 Projet : Système de gestion des colis
 
 ## 🌍 Contexte  
-Avec l’évolution du commerce en ligne et l’augmentation des envois de colis, les entreprises de transport doivent s’adapter à une demande croissante. La gestion efficace des envois, du suivi en temps réel et des statistiques devient un enjeu crucial pour garantir la satisfaction des clients.  
-Ce projet propose une plateforme intuitive permettant de gérer les colis, de suivre leur état en temps réel, et de visualiser des statistiques sur leur traitement.
+Avec l’essor du commerce en ligne, les entreprises de transport font face à une forte demande en matière de gestion d’envois de colis. Le suivi en temps réel, la centralisation des informations, et l’analyse des flux deviennent essentiels pour assurer une livraison efficace et améliorer l’expérience client.  
+Ce projet propose une solution numérique de gestion des colis, combinant des technologies modernes pour assurer la performance, l’interactivité et la fiabilité du système.
 
 ## ❗ Problématique  
-La gestion traditionnelle des envois de colis présente plusieurs limites :
+La gestion traditionnelle des colis montre plusieurs limites :
 
-- Manque de visibilité sur le statut des colis.
-- Difficulté de suivi en temps réel pour les clients et les transporteurs.
-- Absence d’outils d’analyse pour optimiser la logistique.
-  
-Ces problématiques nuisent à l’efficacité des livraisons et à l’expérience client.
+- 🔍 Un suivi peu détaillé ou inexistant pour les clients.
+- 🕐 Des mises à jour manuelles du statut, souvent lentes ou incomplètes.
+- 📉 L’absence de données visuelles pour analyser la performance du système logistique.
+
+Ces problèmes entraînent une baisse de la satisfaction client, une organisation interne inefficace, et des retards dans la livraison.
 
 ## 🎯 Objectifs  
 
-- 📦 Permettre aux utilisateurs d’enregistrer facilement un colis à envoyer.
-- 📍 Mettre en place un système de **suivi détaillé** d’un colis avec son **état**, sa **localisation**, et la **date**.
-- 📋 Afficher une **liste complète des colis** pour les administrateurs et transporteurs.
-- 📊 Intégrer un module de **statistiques dynamiques** (via Chart.js) pour visualiser la répartition des colis par statut.
-- 🔄 Utiliser **AJAX** pour permettre un **suivi en temps réel** sans rechargement de la page.
+- 📦 Enregistrer les informations d’un colis (expéditeur, destinataire, poids, statut).
+- 📍 Mettre en place un système de **suivi dynamique** des colis (état, lieu, date).
+- 📋 Offrir une **liste complète** des colis pour les administrateurs ou les transporteurs.
+- 📊 Visualiser les **statistiques** des colis par statut à l’aide de **Chart.js**.
+- 🔄 Intégrer **AJAX** pour un **suivi en temps réel** sans rechargement de page.
+- 🧩 Utiliser **JPA** avec **Hibernate** pour la persistance des données.
 
 ## 🛠️ Technologies utilisées  
 
-- **Backend** : Java (Servlets / JSP)
-- **Base de données** : MySQL
-- **Frontend** : HTML, CSS, JavaScript
-- **Librairies** :
-  - Chart.js pour les statistiques
-  - AJAX pour les requêtes asynchrones
+- **Langage principal** : Java  
+- **Backend** : Java Servlet, JSP  
+- **ORM / Persistance** : Java Persistence API (JPA), Hibernate  
+- **Frontend** : HTML, CSS, JavaScript  
+- **Communication asynchrone** : AJAX  
+- **Base de données** : MySQL  
+- **Graphiques statistiques** : Chart.js  
 
 ## ⚙️ Diagramme de classe
 
