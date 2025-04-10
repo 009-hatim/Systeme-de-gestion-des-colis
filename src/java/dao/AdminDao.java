@@ -5,18 +5,16 @@
  */
 package dao;
 
-import java.util.List;
+import entities.Admin;
 
 /**
  *
- * @author hkoub
+ * @author hibaa
  */
-public interface Idao <T> {
-    
-    boolean create(T o);
-    boolean delete(T o);
-    boolean update(T o);  
-    List<T> findALL();
-    T findById(int id);
-    
+public class AdminDao extends AbstractDao<Admin> {
+
+    public AdminDao() {
+        super(Admin.class);
+    }
+
 }

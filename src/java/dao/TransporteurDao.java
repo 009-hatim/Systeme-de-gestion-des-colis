@@ -5,18 +5,17 @@
  */
 package dao;
 
-import entities.Colis;
+import entities.Transporteur;
 
 
 /**
  *
  * @author hkoub
  */
-public class ColisDao extends AbstractDao<Colis>{
+public class TransporteurDao extends AbstractDao<Transporteur>{
 
-    public ColisDao() {
-        super(Colis.class);
+    public TransporteurDao() {
+        super(Transporteur.class);
     }
-
     
 }

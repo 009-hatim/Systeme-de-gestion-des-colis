@@ -5,18 +5,15 @@
  */
 package dao;
 
-import entities.Colis;
+import entities.User;
 
 
 /**
  *
  * @author hkoub
  */
-public class ColisDao extends AbstractDao<Colis>{
-
-    public ColisDao() {
-        super(Colis.class);
+public class UserDao extends AbstractDao<User>{
+    public UserDao() {
+        super(User.class);
     }
-
-    
 }

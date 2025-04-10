@@ -1,16 +1,20 @@
-
 package entities;
 
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Colis")
+@Table(name = "colis")
 public class Colis {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -18,6 +22,21 @@ public class Colis {
     private String destinataire;
     private Double poids;
     private String statut;
+
+    @OneToMany(mappedBy = "colis", cascade = CascadeType.ALL)
+    private List<SuiviColis> suiviColisList;
+
+    @ManyToOne
+    @JoinColumn(name = "transporteur_id")
+    private Transporteur transporteur;
+
+    public Transporteur getTransporteur() {
+        return transporteur;
+    }
+
+    public void setTransporteur(Transporteur transporteur) {
+        this.transporteur = transporteur;
+    }
 
     public Colis() {
     }
@@ -28,8 +47,6 @@ public class Colis {
         this.poids = poids;
         this.statut = statut;
     }
-
-   
 
     public int getId() {
         return id;
@@ -71,7 +88,12 @@ public class Colis {
         this.statut = statut;
     }
 
-    
-    
-    
+    public List<SuiviColis> getSuiviColisList() {
+        return suiviColisList;
+    }
+
+    public void setSuiviColisList(List<SuiviColis> suiviColisList) {
+        this.suiviColisList = suiviColisList;
+    }
+
 }

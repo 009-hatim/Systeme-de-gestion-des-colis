@@ -5,44 +5,30 @@
  */
 package entities;
 
+import java.util.List;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Transporteur")
+@Table(name = "transporteurs")
+public class Transporteur extends User {
 
-public class Transporteur {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String nom;
     private String vehicule;
 
+    @OneToMany(mappedBy = "transporteur")
+    private List<Colis> colisList;
+
     public Transporteur() {
+
     }
 
-    public Transporteur(String nom, String vehicule) {
-        this.nom = nom;
+    public Transporteur(String vehicule, String nom, String email, String motDePasse) {
+        super(nom, email, motDePasse);
         this.vehicule = vehicule;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     public String getVehicule() {
@@ -52,5 +38,13 @@ public class Transporteur {
     public void setVehicule(String vehicule) {
         this.vehicule = vehicule;
     }
-    
+
+    public List<Colis> getColisList() {
+        return colisList;
+    }
+
+    public void setColisList(List<Colis> colisList) {
+        this.colisList = colisList;
+    }
+
 }
