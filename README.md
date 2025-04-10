@@ -33,5 +33,5 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 - **Graphiques statistiques** : Chart.js  
 
 ## ⚙️ Diagramme de classe
-![D class](https://github.com/user-attachments/assets/d8cd1a1b-2537-46ff-86d8-84867358d889)
+![D class](https://github.com/user-attachments/assets/ca3dbce2-e7ac-4c84-9f13-f2c0934132fb)
 
