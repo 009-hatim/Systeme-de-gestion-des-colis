@@ -35,3 +35,25 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ## ⚙️ Diagramme de classe
 ![D class](https://github.com/user-attachments/assets/ca3dbce2-e7ac-4c84-9f13-f2c0934132fb)
 
+## 🧩 Schéma conceptuel de la base de données  
+![Modèle Conceptuel](https://github.com/user-attachments/assets/68770591-cd7c-477f-91aa-eebb976d16c8)
+
+---
+
+## 🧪 Phases de test et validation  
+
+### 🏗️ Génération des tables  
+![Création Tables 1](https://github.com/user-attachments/assets/ee46b019-b2bc-4891-a53a-47d37f0e971a)  
+![Création Tables 2](https://github.com/user-attachments/assets/8a5bc893-b585-4f5f-8fd0-c040da949e33)
+
+---
+
+### 📝 Ajout des données d’exemple  
+![Insertion Données](https://github.com/user-attachments/assets/3aff43d1-8d96-49a8-86d0-164378e59d7c)
+
+---
+
+### 🔍 Opérations de filtrage  
+![Filtrage](https://github.com/user-attachments/assets/4d57f410-15a8-432b-a845-c0e58deb59e2)
+
+
