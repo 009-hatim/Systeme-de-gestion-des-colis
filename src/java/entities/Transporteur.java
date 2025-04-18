@@ -7,6 +7,8 @@ package entities;
 
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.CascadeType;
+
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -19,7 +21,10 @@ public class Transporteur extends User {
 
     private String vehicule;
 
-    @OneToMany(mappedBy = "transporteur")
+    @OneToMany(mappedBy = "transporteur", 
+               cascade = CascadeType.ALL,
+               orphanRemoval = true,
+               fetch = FetchType.LAZY)
     private List<Colis> colisList;
 
     public Transporteur() {

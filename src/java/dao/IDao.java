@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author hkoub
  */
-interface IDao<T> {
+public interface IDao<T> {
 
     boolean create(T o);
 

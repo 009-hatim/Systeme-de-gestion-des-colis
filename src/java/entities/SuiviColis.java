@@ -15,6 +15,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import org.hibernate.annotations.NamedNativeQuery;
+import org.hibernate.annotations.NamedQuery;
 
 /**
  *
@@ -22,6 +24,10 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "suiviColis")
+
+@NamedQuery (name = "findByEtat", query = "from SuiviColis where etat=:et")
+@NamedNativeQuery(name = "findSuiviByColisId",query = "SELECT s.* FROM suivicolis s WHERE s.colis_id = :id",resultClass = SuiviColis.class)
+
 public class SuiviColis {
 
     @Id
