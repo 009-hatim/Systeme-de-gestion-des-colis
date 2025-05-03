@@ -59,8 +59,12 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ### 📌Vidéo Démonstrative
 
 
-https://github.com/user-attachments/assets/c8b602c3-6cea-4782-ac8f-7b1e299cf453
 
 
+
+
+
+
+https://github.com/user-attachments/assets/4bf8cb58-b958-442f-b7b8-ec7a023e97ab
 
 
