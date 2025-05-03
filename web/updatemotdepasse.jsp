@@ -3,32 +3,200 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Nouveau mot de passe</title>
+        <title>HTrak Logistics - Nouveau mot de passe</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                background-color: #f9f9f9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+                background-image: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            }
+            
+            .auth-container {
+                width: 100%;
+                max-width: 420px;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .auth-header {
+                background-color: #2c3e50;
+                color: white;
+                padding: 25px;
+                text-align: center;
+                position: relative;
+            }
+            
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            
+            .logo-icon {
+                font-size: 28px;
+                margin-right: 10px;
+                color: #3498db;
+            }
+            
+            .logo-text {
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            
+            .auth-header h2 {
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 5px;
+                opacity: 0.9;
+            }
+            
+            .auth-body {
+                padding: 30px;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
+                position: relative;
+            }
+            
+            .form-group label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 500;
+                color: #2c3e50;
+                font-size: 14px;
+            }
+            
+            .form-control {
+                width: 100%;
+                padding: 12px 15px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                font-size: 14px;
+                transition: all 0.3s;
+                background-color: #f9f9f9;
+            }
+            
+            .form-control:focus {
+                border-color: #3498db;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+                background-color: white;
+            }
+            
+            .btn {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .btn-primary {
+                background-color: #2c3e50;
+                color: white;
+            }
+            
+            .btn-primary:hover {
+                background-color: #1a252f;
+                transform: translateY(-2px);
+            }
+            
+            .auth-footer {
+                text-align: center;
+                padding: 20px;
+                border-top: 1px solid #eee;
+                font-size: 14px;
+            }
+            
+            .error-message {
+                color: #e74c3c;
+                background-color: #fde8e8;
+                padding: 12px;
+                border-radius: 6px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                text-align: center;
+                border: 1px solid #f5c6cb;
+            }
+            
+            @media (max-width: 480px) {
+                .auth-container {
+                    max-width: 100%;
+                    border-radius: 0;
+                }
+                
+                body {
+                    padding: 0;
+                }
+            }
+        </style>
     </head>
     <body>
-        <fieldset>
-            <legend>Nouveau mot de passe</legend>
-            <form action="UpdatePassword" method="POST">
-                <input type="hidden" name="userType" value="<%= request.getParameter("userType") %>">
-                <table>
-                    <tr>
-                        <td>Nouveau mot de passe :</td>
-                        <td><input type="password" name="password" required></td>
-                    </tr>
-                    <tr>
-                        <td>Confirmer mot de passe :</td>
-                        <td><input type="password" name="confirmPassword" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Modifier"></td>
-                    </tr>
-                    <% if(request.getParameter("msg") != null) { %>
-                    <tr>
-                        <td colspan="2"><h4 style="color:red;"><%= request.getParameter("msg") %></h4></td>
-                    </tr>
-                    <% } %>
-                </table>
-            </form>
-        </fieldset>
+        <div class="auth-container">
+            <div class="auth-header">
+                <div class="logo">
+                    <span class="logo-icon">📦</span>
+                    <span class="logo-text">HTrak Logistics</span>
+                </div>
+                <h2>Réinitialisation du mot de passe</h2>
+            </div>
+            
+            <div class="auth-body">
+                <% if(request.getParameter("msg") != null) { %>
+                <div class="error-message">
+                    <%= request.getParameter("msg") %>
+                </div>
+                <% } %>
+                
+                <form action="UpdatePassword" method="POST">
+                    <input type="hidden" name="userType" value="<%= request.getParameter("userType") %>">
+                    
+                    <div class="form-group">
+                        <label for="password">Nouveau mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmer mot de passe</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Modifier</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="auth-footer">
+                © 2025 HTrak Logistics. Tous droits réservés.
+            </div>
+        </div>
     </body>
 </html>

@@ -5,18 +5,20 @@
  */
 package test;
 
-import dao.SuiviColisDao;
-import entities.SuiviColis;
+import dao.ColisDao;
+import entities.Colis;
 import java.util.List;
 /**
  *
  * @author hkoub
  */
-public class testSuivi {
+public class TestStatut {
     public static void main(String[] args) {
-        SuiviColisDao sd = new SuiviColisDao();
-        for(SuiviColis s : sd.findByEtat("En cours de livraison")){
-            System.out.println(s.getLieu());
+        ColisDao cd = new ColisDao();
+        
+        for(Colis c: cd.findByStatut("En attente")){
+            System.out.println(c.getDestinataire());
+            
         }
     }
 }

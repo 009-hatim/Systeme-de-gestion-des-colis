@@ -19,6 +19,7 @@
         <mapping class="entities.Transporteur"/>
         <mapping class="entities.User"/>
     
+        
 
     </session-factory>
 </hibernate-configuration>

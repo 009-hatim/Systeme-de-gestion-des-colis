@@ -22,6 +22,30 @@ public class SuiviColisDao extends AbstractDao<SuiviColis> {
         super(SuiviColis.class);
     }
 
+    public List<SuiviColis> findByColisId(int colisId) {
+        Session session = null;
+        Transaction tx = null;
+        List<SuiviColis> result = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            tx = session.beginTransaction();
+            result = session.getNamedQuery("findSuiviByColisId")
+                    .setParameter("id", colisId)
+                    .list();
+            tx.commit();
+        } catch (Exception e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return result;
+    }
+
     public List<SuiviColis> findByEtat(String etat) {
         Session session = null;
         Transaction tx = null;

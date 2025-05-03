@@ -2,6 +2,24 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/controlleur/UpdateTransporteur.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/transporteurDashboard.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/verifier.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/controlleur/InscriptionAdmin.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/Inscription.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/controlleur/UpdateSuiviColis.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/Authentification.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/controlleur/Authentification.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/gestionColis.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/BarChart.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/adminDashboard.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/entities/Colis.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/config/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/src/java/controlleur/UpdatePassword.java</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/suiviColisAdmin.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/updatemotdepasse.jsp</file>
+            <file>file:/C:/Users/hkoub/OneDrive/Documents/NetBeansProjects/GestionColis/web/envoiColis.jsp</file>
+        </group>
     </open-files>
 </project-private>

@@ -32,10 +32,10 @@ public class Authentification extends HttpServlet {
                     session.setAttribute("admin", admin);
                     response.sendRedirect("adminDashboard.jsp");
                 } else {
-                    response.sendRedirect("login.jsp?msg=Mot de passe incorrect");
+                    response.sendRedirect("Authentification.jsp?msg=Mot de passe incorrect");
                 }
             } else {
-                response.sendRedirect("login.jsp?msg=Email introuvable");
+                response.sendRedirect("Authentification.jsp?msg=Email introuvable");
             }
         } else if ("transporteur".equals(userType)) {
             ServiceTransporteur st = new ServiceTransporteur();
@@ -47,13 +47,13 @@ public class Authentification extends HttpServlet {
                     session.setAttribute("transporteur", transporteur);
                     response.sendRedirect("transporteurDashboard.jsp");
                 } else {
-                    response.sendRedirect("login.jsp?msg=Mot de passe incorrect");
+                    response.sendRedirect("Authentification.jsp?msg=Mot de passe incorrect");
                 }
             } else {
-                response.sendRedirect("login.jsp?msg=Email introuvable");
+                response.sendRedirect("Authentification.jsp?msg=Email introuvable");
             }
         } else {
-            response.sendRedirect("login.jsp?msg=Type d'utilisateur invalide");
+            response.sendRedirect("Authentification.jsp?msg=Type d'utilisateur invalide");
         }
     }
 
