@@ -56,4 +56,11 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ### 🔍 Opérations de filtrage  
 ![Filtrage](https://github.com/user-attachments/assets/4d57f410-15a8-432b-a845-c0e58deb59e2)
 
+### 📌Vidéo Démonstrative
+
+
+https://github.com/user-attachments/assets/c8b602c3-6cea-4782-ac8f-7b1e299cf453
+
+
+
 
