@@ -52,17 +52,14 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ![Insertion Données](https://github.com/user-attachments/assets/3aff43d1-8d96-49a8-86d0-164378e59d7c)
 
 ---
--->
+
 ### 🔍 Opérations de filtrage  
 ![Filtrage](https://github.com/user-attachments/assets/4d57f410-15a8-432b-a845-c0e58deb59e2)
 
+-->
 
 
 ### 📌Vidéo Démonstrative
-
-
-
-
 https://github.com/user-attachments/assets/4bf8cb58-b958-442f-b7b8-ec7a023e97ab
 
 
