@@ -39,7 +39,7 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ![Modèle Conceptuel](https://github.com/user-attachments/assets/68770591-cd7c-477f-91aa-eebb976d16c8)
 
 ---
-
+<!--
 ## 🧪 Phases de test et validation  
 
 ### 🏗️ Génération des tables  
@@ -52,15 +52,13 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ![Insertion Données](https://github.com/user-attachments/assets/3aff43d1-8d96-49a8-86d0-164378e59d7c)
 
 ---
-
+-->
 ### 🔍 Opérations de filtrage  
 ![Filtrage](https://github.com/user-attachments/assets/4d57f410-15a8-432b-a845-c0e58deb59e2)
 
+
+
 ### 📌Vidéo Démonstrative
-
-
-
-
 
 
 
