@@ -25,9 +25,8 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 ## 🛠️ Technologies utilisées  
 
 - **Langage principal** : Java  
-- **Backend** : Java Servlet, JSP  
-- **ORM / Persistance** : Java Persistence API (JPA), Hibernate  
-- **Frontend** : HTML, CSS, JavaScript  
+- **Backend** : Java (Hibernate, Servlets)
+- **Frontend** : JSP, HTML, CSS, JavaScript  
 - **Communication asynchrone** : AJAX  
 - **Base de données** : MySQL  
 - **Graphiques statistiques** : Chart.js  
@@ -37,6 +36,7 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 
 ## 🧩 Schéma conceptuel de la base de données  
 ![Modèle Conceptuel](https://github.com/user-attachments/assets/68770591-cd7c-477f-91aa-eebb976d16c8)
+
 
 ---
 <!--
