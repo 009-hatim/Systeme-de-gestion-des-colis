@@ -58,6 +58,67 @@ Ces problèmes entraînent une baisse de la satisfaction client, une organisatio
 
 -->
 
+## 📌 Structure du Projet  
+
+```bash
+GestionColis/
+│
+├── Web Pages/                         # Interfaces utilisateur (JSP / HTML)
+│   ├── WEB-INF/
+│   │   ├── Authentification.jsp
+│   │   ├── Inscription.jsp
+│   │   ├── Mpob.jsp
+│   │   ├── PieChart.jsp
+│   │   ├── BarChart.jsp
+│   │   └── ...
+│   ├── index.html
+│   ├── welcome.jsp
+│   └── autres fichiers JSP (Dashboards, Suivi, etc.)
+│
+├── Source Packages/
+│   ├── config/                        # Fichiers de configuration (Hibernate)
+│   │   └── hibernate.cfg.xml
+│   │
+│   ├── controleur/                    # Contrôleurs (Servlets)
+│   │   ├── Authentification.java
+│   │   ├── InscriptionAdmin.java
+│   │   ├── CreateColis.java
+│   │   ├── DeleteColis.java
+│   │   └── ... (Update, Delete, Verifier, etc.)
+│   │
+│   ├── dao/                           # Accès aux données
+│   │   ├── AbstractDao.java
+│   │   ├── ColisDao.java
+│   │   ├── SuiviColisDao.java
+│   │   └── autres DAO (Admin, Transporteur, etc.)
+│   │
+│   ├── entities/                      # Entités Hibernate (modèle)
+│   │   ├── Admin.java
+│   │   ├── Colis.java
+│   │   ├── SuiviColis.java
+│   │   ├── Transporteur.java
+│   │   └── User.java
+│   │
+│   ├── service/                       # Logique métier
+│   │   ├── SendMail.java
+│   │   ├── ServiceAdmin.java
+│   │   ├── ServiceTransporteur.java
+│   │   └── SuiviColisService.java
+│   │
+│   ├── test/                          # Tests unitaires
+│   │   ├── Test.java
+│   │   ├── TestBycolis.java
+│   │   └── autres classes de test
+│   │
+│   └── util/                          # Utilitaires
+│       ├── HibernateUtil.java
+│       └── Util.java
+│
+├── Libraries/                         # Dépendances (Hibernate, Servlet, etc.)
+└── Configuration Files/              # Fichiers de configuration NetBeans
+
+```
+
 
 ### 📌Vidéo Démonstrative
 https://github.com/user-attachments/assets/4bf8cb58-b958-442f-b7b8-ec7a023e97ab
